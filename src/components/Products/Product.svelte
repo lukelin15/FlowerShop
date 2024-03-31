@@ -13,7 +13,7 @@
 <article class="product">
   <div class="image-container">
     <img src={image} alt={title} /> <!-- Use image variable here -->
-    <a href={`/products/${id}`} class="btn btn-primary" use:link>details</a>
+    <a href={`/products/${id}`} class="btn btn-primary01" use:link>details</a>
   </div>
   <div class="product-footer">
     <p class="product-title">{title}</p>
