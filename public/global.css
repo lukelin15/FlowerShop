@@ -82,9 +82,10 @@ Buttons
 .btn-primary {
   text-transform: uppercase;
   letter-spacing: var(--mainSpacing);
+  margin: 1vb;
   color: var(--primaryColor);
   border: 2px solid var(--primaryColor);
-  border-radius: 5rem;
+  border-radius: 10rem;
   padding: 0.45rem 0.8rem;
   display: inline-block;
   transition: var(--mainTransition);
@@ -241,9 +242,10 @@ Hero
   width: var(--smallWidth);
   max-width: var(--maxWidth);
 }
-.hero h1 {
+.hero h1{
   font-size: 3rem;
   text-transform: capitalize;
+  color: rgb(198, 100, 115);
 }
 .hero p {
   font-size: 1.5rem;
@@ -252,7 +254,7 @@ Hero
   margin-bottom: 1.75rem;
 }
 .btn-hero {
-  border-radius: 0;
+  border-radius: 10rem;
   font-weight: bold;
   padding: 0.8rem 1.5rem;
   background: var(--primaryDarkColor);
@@ -270,14 +272,16 @@ Hero
     font-size: 5rem;
     color: rgb(215, 130, 143);
   }
+
   .hero p {
     font-size: 1rem;
   }
   .btn-hero {
     font-size: 1.2rem;
-    padding: 1rem 1.5rem;
+    padding: 1rem 1.5rem ;
     padding: 1rem 3rem;
     border-radius: 5rem;
+    
   }
 }
 /* 
