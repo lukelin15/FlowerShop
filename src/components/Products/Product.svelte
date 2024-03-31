@@ -2,12 +2,17 @@
   import { link } from "svelte-routing";
 
   export let product;
-  const { title, image, price, id } = product;
+  let title, price, id, image;
+
+  $: if (product) {
+    ({ title, price, id, image } = product);
+    console.log(image);
+  }
 </script>
 
 <article class="product">
   <div class="image-container">
-    <img src={image} alt={title} />
+    <img src={image} alt={title} /> <!-- Use image variable here -->
     <a href={`/products/${id}`} class="btn btn-primary" use:link>details</a>
   </div>
   <div class="product-footer">
