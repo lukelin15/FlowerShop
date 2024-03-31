@@ -134,7 +134,7 @@ Navbar
 */
 
 .navbar {
-  background: var(--mainWhite);
+  background: white;
   height: 5rem;
   position: fixed;
   z-index: 2;
@@ -205,11 +205,10 @@ Navbar
 .nav-aside a:hover {
   color: var(--primaryColor);
 }
-.nav-logo {
-  line-height: 0;
-}
+
 .logo {
   width: 4.5rem;
+  margin-top: -40px;
 }
 
 .big-logo {
