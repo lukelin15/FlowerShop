@@ -16,7 +16,7 @@
     </button>
     <!-- logo -->
     <a href="/" use:link class="nav-logo">
-      <img src="/assets/images/logo.svg" alt="logo" class="logo" />
+      <img src="/assets/images/logo.png" alt="logo" class="logo" />
     </a>
     <!-- cart button -->
     <CartButton />
