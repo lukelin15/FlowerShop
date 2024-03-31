@@ -18,7 +18,7 @@
     <div class="products-center">
       {#each featuredProducts as product (product.id)}
         <Product {product} />
-      {:else}{/each}
+      {/each}
     </div>
   </section>
 {/if}
