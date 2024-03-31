@@ -102,7 +102,7 @@ export default async () => {
       price: 33.99,
       description:
         "Lorem ipsum dolor amet squid tbh crucifix woke, vegan banjo succulents try-hard distillery waistcoat photo booth. Chillwave single-origin coffee art party snackwave palo santo before they sold out. Lyft brooklyn gluten-free, vape XOXO hella unicorn meggings banh mi heirloom air plant copper mug fixie lo-fi. Vaporware copper mug semiotics pok pok kogi poutine.",
-      featured: null,
+      featured: true,
       created_at: "2019-10-28T19:46:08.939Z",
       updated_at: "2019-10-28T19:46:08.939Z",
       image: {
