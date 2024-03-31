@@ -18,7 +18,7 @@
       </button>
     </div>
     <!-- logo -->
-    <img src="/assets/images/logo.svg" alt="logo" class="logo sidebar-logo" />
+    <img src="/assets/images/logo.png" alt="logo" class="logo sidebar-logo" />
     <!-- links -->
     <ul class="sidebar-links">
       {#each links as sideLink}

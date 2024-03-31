@@ -10,10 +10,9 @@ Variables
 ======
 */
 :root {
-  --primaryColor: #9e3aa3;
-  --primaryDarkColor: #4e1d51;
-  --primaryFont: "Catamaran", sans-serif;
-  --slantedFont: "Kaushan Script", cursive;
+  --primaryColor: #f39056;
+  --primaryDarkColor: #104124;
+  --primaryFont: sans-serif;
   --mainWhite: #fff;
   --offWhite: #f7f7f7;
   --mainBackground: rgb(250, 245, 243);
@@ -23,7 +22,6 @@ Variables
   --darkGrey: #afafaf;
   --mainRed: #bd0303;
   --mainTransition: all 0.3s linear;
-  --mainSpacing: 0.3rem;
   --lightShadow: 2px 5px 3px 0px rgba(0, 0, 0, 0.5);
   --darkShadow: 4px 10px 5px 0px rgba(0, 0, 0, 0.5);
   --mainBorderRadius: 0.25rem;
@@ -86,6 +84,7 @@ Buttons
   letter-spacing: var(--mainSpacing);
   color: var(--primaryColor);
   border: 2px solid var(--primaryColor);
+  border-radius: 5rem;
   padding: 0.45rem 0.8rem;
   display: inline-block;
   transition: var(--mainTransition);
@@ -228,10 +227,10 @@ Hero
 .hero {
   min-height: calc(100vh - 5rem);
   background: linear-gradient(
-      rgba(255, 255, 255, 0.3),
-      rgba(255, 255, 255, 0.3)
+      rgba(255, 255, 255, 0.128),
+      rgba(255, 255, 255, 0.065)
     ),
-    url("./assets/images/mainBcg.jpeg") center/cover no-repeat;
+    url("./assets/images/mainBcg.jpg") center/cover no-repeat;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -268,15 +267,17 @@ Hero
   }
 
   .hero h1 {
-    font-size: 5.3rem;
+    font-size: 5rem;
+    color: rgb(215, 130, 143);
   }
   .hero p {
-    font-size: 2.3rem;
+    font-size: 1rem;
   }
   .btn-hero {
     font-size: 1.2rem;
     padding: 1rem 1.5rem;
     padding: 1rem 3rem;
+    border-radius: 5rem;
   }
 }
 /* 
