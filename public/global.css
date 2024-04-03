@@ -34,13 +34,21 @@ Variables
 Global Styles 
 ======
 */
+
+
 * {
+
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
+
 }
 
 body {
+  display: flex;
+  overflow-x: hidden;
+  height: auto;
   font-family: var(--primaryFont);
   color: var(--mainBlack);
   background: var(--mainBackground);
@@ -48,6 +56,10 @@ body {
   font-size: 1rem;
   font-weight: 300;
   margin-top: 5rem;
+  height: 100vh;
+  flex-direction: column;
+
+
 }
 h1,
 h2,
@@ -261,15 +273,19 @@ Hero
 
 .hero {
   min-height: calc(100vh - 5rem);
+  flex-direction: column;
+
   background: linear-gradient(
       rgba(255, 255, 255, 0.128),
       rgba(255, 255, 255, 0.065)
     ),
     url("./assets/images/mainBcg.jpg") center/cover no-repeat;
   display: flex;
+  flex: 1;
   justify-content: center;
   align-items: center;
   color: var(--primaryDarkColor);
+  overflow-x: hidden;
 }
 .banner {
   margin-top: 5rem;
@@ -280,6 +296,7 @@ Hero
 }
 
 .hero h1{
+  display: flex;
   font-size: 4rem;
   font-weight: bold;
   text-transform: capitalize;
@@ -300,7 +317,7 @@ Hero
 
 .hero p {
   font-size: 1rem;
-  font-weight: bold;
+  max-width: 500px;
   letter-spacing: 0px;
   margin-bottom: 1.75rem;
   line-height: 1;
@@ -443,7 +460,7 @@ Sidebar
   position: fixed;
   top: 0;
   left: 0;
-  width: 50%;
+  width: 30%;
   height: 100%;
   z-index: 999;
   transition-duration: 400s;
@@ -473,6 +490,7 @@ Sidebar
   font-size: 1.5rem;
   text-transform: capitalize;
   font-weight: 400;
+  font-weight: bold;
   letter-spacing: var(--mainSpacing);
   display: block;
   margin: 1rem 2rem;
