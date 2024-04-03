@@ -443,7 +443,7 @@ Sidebar
   position: fixed;
   top: 0;
   left: 0;
-  width: 50%;
+  width: 30%;
   height: 100%;
   z-index: 999;
   transition-duration: 400s;
@@ -473,6 +473,7 @@ Sidebar
   font-size: 1.5rem;
   text-transform: capitalize;
   font-weight: 400;
+  font-weight: bold;
   letter-spacing: var(--mainSpacing);
   display: block;
   margin: 1rem 2rem;
