@@ -458,7 +458,7 @@ Sidebar
   position: fixed;
   top: 0;
   left: 0;
-  width: 600px;
+  width: 300px;
   height: 100%;
   z-index: 999;
   transition-duration: 400s;
@@ -499,7 +499,7 @@ Sidebar
   padding-left: 0.5rem;
 }
 
-@media screen and (min-width: 350px) {
+@media screen and (min-width: 1100px) {
   .sidebar-container {
     background:  rgba(255, 255, 255, 0.5);
     backdrop-filter: blur(10px);
