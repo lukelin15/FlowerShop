@@ -20,6 +20,10 @@
     <span style="--i:3;"><img src="assets/product-images/product-3.jpg" alt=""></span>
     <span style="--i:4;"><img src="assets/product-images/product-4.jpg" alt=""></span>
     <span style="--i:5;"><img src="assets/product-images/product-5.jpg" alt=""></span>
+    <span style="--i:6;"><img src="assets/product-images/product-6.jpeg" alt=""></span>
+    <span style="--i:7;"><img src="assets/product-images/product-7.jpeg" alt=""></span>
+    <span style="--i:8;"><img src="assets/product-images/product-8.jpeg" alt=""></span>
+    <span style="--i:9;"><img src="assets/product-images/product-9.jpeg" alt=""></span>
 </div>
 </section>
 
