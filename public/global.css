@@ -26,7 +26,7 @@ Variables
   --lightShadow: 2px 5px 3px 0px rgba(0, 0, 0, 0.5);
   --darkShadow: 4px 10px 5px 0px rgba(0, 0, 0, 0.5);
   --mainBorderRadius: 0.25rem;
-  --smallWidth: 85vw;
+  --smallWidth: 100vw;
   --maxWidth: 1170px;
 }
 /* 
@@ -37,7 +37,6 @@ Global Styles
 
 
 * {
-
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -273,7 +272,6 @@ Hero
 .hero {
   min-height: calc(100vh - 5rem);
   flex-direction: column;
-
   background: linear-gradient(
       rgba(255, 255, 255, 0.128),
       rgba(255, 255, 255, 0.065)
@@ -294,7 +292,7 @@ Hero
 }
 
 .hero h1{
-  max-width: 700px;
+  max-width: 500px;
   font-size: 4rem;
   font-weight: bold;
   text-transform: capitalize;
@@ -369,56 +367,61 @@ SLIDER
   display: flex;
   align-items: center;
   justify-content: center;
+  max-width: 100%;
 }
 
 .slider{
-position:relative;
-width: 200px;
-height: 200px;
-transform-style: preserve-3d ;
-animation: rotate 30s linear infinite;
+  position:relative;
+  width: 200px;
+  height: 200px;
+  transform-style: preserve-3d ;
+  animation: rotate 30s linear infinite;
 }
 
 @keyframes rotate{
-0%{
-  transform: perspective(1000px) rotateY(0deg);
-}
-100%{
-  transform: perspective(1000px) rotateY(360deg);
-}
+  0%{
+    transform: perspective(1000px) rotateY(0deg);
+  }
+  100%{
+    transform: perspective(1000px) rotateY(360deg);
+  }
 }
 
 .slider span{
-position: absolute;
-top: 0;
-left: 0;
-width: 100%;
-height: 100%;
-transform-origin: center;
-transform-style: preserve-3d;
-transform: rotateY(calc(var(--i)*40deg)) translateZ(250px);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: auto;
+  height: 100%;
+  transform-origin: center;
+  transform-style: preserve-3d;
+  transform: rotateY(calc(var(--i)*40deg)) translateZ(250px);
 }
 
 .slider span img{
-position: absolute;
-top: 0;
-left: 0;
-width: 80%;
-height: 80%;
-border-radius: 50px;
-object-fit: cover;
-transition: 2s;
+  max-width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: auto;
+  height: auto;
+  border-radius: 50px;
+  object-fit: none;
+  transition: 2s;
 }
 
 .slider span:hover img{
-transform: translateY(-30px) scale(1);
+  transform: translateY(-30px) scale(1);
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 400px) {
   .slider span img {
     position: absolute;
-    width: 80%; 
-    height: 80%; 
+    width: 50%; 
+    height: 50%; 
+  }
+  .slider span:hover img{
+    transform: translateY(-30px) scale(1);
   }
 }
 /* 
